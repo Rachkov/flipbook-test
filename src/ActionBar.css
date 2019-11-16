@@ -1,0 +1,41 @@
+.action-bar {
+    width: 100%;
+    height: 30px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-bar .btn {
+    font-size: 30px;
+    color: #999;
+}
+
+.action-bar .btn svg {
+    bottom: 0;
+}
+
+.action-bar .btn:not(:first-child) {
+    margin-left: 10px;
+}
+
+.has-mouse .action-bar .btn:hover {
+    color: #ccc;
+    filter: drop-shadow(1px 1px 5px #000);
+    cursor: pointer;
+}
+
+.action-bar .btn:active {
+    filter: none !important;
+}
+
+.action-bar .btn.disabled {
+    color: #666;
+    pointer-events: none;
+}
+
+.action-bar .page-num {
+    font-size: 12px;
+    margin-left: 10px;
+}
